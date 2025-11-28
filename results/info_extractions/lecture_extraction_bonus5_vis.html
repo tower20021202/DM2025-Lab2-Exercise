@@ -1,0 +1,230 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">real_world_example</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        # LECTURE ANALYSIS: Pending Invitation from NTU Cool
+## Video Segment: 10:00
+
+[TRANSCRIPT - 10:14]
+So then, if you haven&#x27;t got a NTU cool account, please you also need to have the NTU cool account. We do having a lot of in-class quiz, because you need it to interact with us. Um, we do having a lot of in-class quiz. Don&#x27;t worry, it is not really great you.
+
+[TRANSCRIPT - 10:30]
+Okay, so then, try to join NTU cool, just utilize that as participation score.
+
+[TRANSCRIPT - 10:35]
+Okay, so then, try to join NTU cool or slido. Today we have some on the slido too.
+
+[TRANSCRIPT - 10:43]
+Okay. So it&#x27;s 9 o&#x27;clock. Good morning everyone. We are going to have our first real class for today.
+
+[TRANSCRIPT - 10:52]
+And here is the QR code for every session. Um, I will have a corresponding QR code for this session. Or if you have some question, leave your question on slido. Or if you have some question in the end, we will also have one minute.
+
+[SLIDE DESCRIPTION]
+The slide displays a list of &quot;Satellite Schools&quot; with their corresponding names in Chinese and English. The list includes: Chaoyang University of Technology, Tatung University, National United University, Taipei Medical University, National Open University, National Central University, Providence University, National Sun Yat-sen University, Shih Chien University, Feng Chia University, and National Kaohsiung University of Science and Technology.
+
+[TRANSCRIPT - 11:13]
+So then before we start, there is something to let you know. <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">For the people who are on the YouTube, if you are belong to those school, Chaoyang University of Technology, Tatung University, National United University, Taipei Medical University, National Open University, National Central University, Providence University, National Sun Yat-sen University, Shih Chien University, Feng Chia University, National Kaohsiung University of Science and Technology. If you belong to this school, your school has satellites course.</span>
+
+[TRANSCRIPT - 11:40]
+On the NTU cool, one is our main course. So which means you are going to have two course on NTU cool. One is our main course, one is for your school.
+
+[TRANSCRIPT - 11:50]
+So for those student, you did not see your school&#x27;s name on it, which means you directly take the course with it. We actually will give you the grade, and then all the question will come to us. If you come from the satellite school, you can also ask question to our TA. But supposedly in your school you have your corresponding TA in your school. So pay attention to your NTU cool.
+
+[SLIDE DESCRIPTION]
+The slide shows a table titled &quot;Pending Invitation from NTU Cool&quot;. It lists several names (Arthur, Bastian, Tobias, Cedric, THI TO NGA) with their Login IDs, SEI IDs, Sections, and Roles (Student or Auditor). Some entries are marked as &#x27;pending&#x27;. To the right of the table, there are statistics for three universities: National Tsing Hua University (59 Pending Enrollments, 90 Active Enrollments), National Cheng Kung University (11 Pending Enrollments, 23 Active Enrollments), and National Sun Yat-sen University (10 Pending Enrollments, 19 Active Enrollments).
+
+[TRANSCRIPT - 12:22]
+And then this one is what I checked last night. Last night when I checked the NTU cool, I find out <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">we still have 300 student haven&#x27;t accept our invitation from NTU cool.</span>
+
+[TRANSCRIPT - 12:38]
+And then let me try to sample some school. So for example, <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">from National Tsing Hua University, we still have around 60 student are not accept the invitation.</span>
+
+[TRANSCRIPT - 12:50]
+to the email you left in our school system. NTU cool send you the invitation email to the email you left in our school system.
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="2" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/3</span> |
+          Pos <span id="posInfo">[1494-1954]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "real_world_example", "text": "For the people who are on the YouTube, if you are belong to those school, Chaoyang University of Technology, Tatung University, National United University, Taipei Medical University, National Open University, National Central University, Providence University, National Sun Yat-sen University, Shih Chien University, Feng Chia University, National Kaohsiung University of Science and Technology. If you belong to this school, your school has satellites course.", "color": "#D2E3FC", "startPos": 1494, "endPos": 1954, "beforeText": "sity, and National Kaohsiung University of Science and Technology.\n\n[TRANSCRIPT - 11:13]\nSo then before we start, there is something to let you know. ", "extractionText": "For the people who are on the YouTube, if you are belong to those school, Chaoyang University of Technology, Tatung University, National United University, Taipei Medical University, National Open University, National Central University, Providence University, National Sun Yat-sen University, Shih Chien University, Feng Chia University, National Kaohsiung University of Science and Technology. If you belong to this school, your school has satellites course.", "afterText": "\n\n[TRANSCRIPT - 11:40]\nOn the NTU cool, one is our main course. So which means you are going to have two course on NTU cool. One is our main course, o", "attributesHtml": "<div><strong>class:</strong> real_world_example</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Satellite Schools</span>, <span class=\"lx-attr-key\">example_description</span>: <span class=\"lx-attr-value\">A list of universities (e.g., Chaoyang University of Technology, Tatung University) that have satellite courses, as indicated by a QR code and mentioned for YouTube viewers.</span>, <span class=\"lx-attr-key\">why_it_matters</span>: <span class=\"lx-attr-value\">This information is relevant for students from these specific universities who might be taking the course remotely or through a satellite program.</span>}</div>"}, {"index": 1, "class": "real_world_example", "text": "we still have 300 student haven't accept our invitation from NTU cool.", "color": "#D2E3FC", "startPos": 3236, "endPos": 3306, "beforeText": "nts, 19 Active Enrollments).\n\n[TRANSCRIPT - 12:22]\nAnd then this one is what I checked last night. Last night when I checked the NTU cool, I find out ", "extractionText": "we still have 300 student haven&#x27;t accept our invitation from NTU cool.", "afterText": "\n\n[TRANSCRIPT - 12:38]\nAnd then let me try to sample some school. So for example, from National Tsing Hua University, we still have around 60 student ", "attributesHtml": "<div><strong>class:</strong> real_world_example</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Student Enrollment Management</span>, <span class=\"lx-attr-key\">example_description</span>: <span class=\"lx-attr-value\">300 students have not yet accepted their invitation to the NTU Cool platform.</span>, <span class=\"lx-attr-key\">why_it_matters</span>: <span class=\"lx-attr-value\">Highlights the importance of tracking and following up on pending acceptances to ensure all students are properly enrolled and can access course materials.</span>}</div>"}, {"index": 2, "class": "real_world_example", "text": "from National Tsing Hua University, we still have around 60 student are not accept the invitation.", "color": "#D2E3FC", "startPos": 3388, "endPos": 3486, "beforeText": " still have 300 student haven&#x27;t accept our invitation from NTU cool.\n\n[TRANSCRIPT - 12:38]\nAnd then let me try to sample some school. So for example, ", "extractionText": "from National Tsing Hua University, we still have around 60 student are not accept the invitation.", "afterText": "\n\n[TRANSCRIPT - 12:50]\nto the email you left in our school system. NTU cool send you the invitation email to the email you left in our school system.\n", "attributesHtml": "<div><strong>class:</strong> real_world_example</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">related_concept</span>: <span class=\"lx-attr-value\">Student Enrollment Management</span>, <span class=\"lx-attr-key\">example_description</span>: <span class=\"lx-attr-value\">Approximately 60 students from National Tsing Hua University have not accepted their NTU Cool invitation.</span>, <span class=\"lx-attr-key\">why_it_matters</span>: <span class=\"lx-attr-value\">Provides a specific breakdown of pending enrollments, showing that a significant portion of the total pending invitations are from a single institution, suggesting a need for targeted communication or support.</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
